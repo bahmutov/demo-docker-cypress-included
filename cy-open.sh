@@ -24,4 +24,4 @@ docker run -it \
   -w /e2e \
   -e DISPLAY \
   --entrypoint cypress \
-  cypress/included:3.2.0 open --project .
+  cypress/included:3.4.0 open --project .
