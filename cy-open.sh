@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # pass DISPLAY variable pointing at the host's X11 server
 # like XQuartz
 # read https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/

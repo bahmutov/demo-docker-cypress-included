@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Running Cypress e2e tests headlessly without copying files"
 
 # explanation of the "docker run" command line arguments
