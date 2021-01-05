@@ -88,6 +88,14 @@ System Platform: linux (Debian - 10.5)
 System Memory: 2.09 GB free 534 MB
 ```
 
+### Running in a browser
+
+Since we see that Chrome and Firefox browsers are pre-installed in the container, let's run tests using Firefox for example
+
+```shell
+$ ./cy-run.sh --browser firefox
+```
+
 ## Cypress open
 
 Follow [Running GUI applications using Docker for Mac](https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/) and install [XQuartz](https://www.xquartz.org) X11 server. Then see [cy-open.sh](cy-open.sh) for Docker run command that forwards XVFB events from Cypress to the X11 server running on the host machine. You should see Cypress Test Runner open and work fine.
