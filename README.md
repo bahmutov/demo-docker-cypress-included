@@ -102,3 +102,7 @@ $ ./cy-run.sh --browser firefox
 Follow [Running GUI applications using Docker for Mac](https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/) and install [XQuartz](https://www.xquartz.org) X11 server. Then see [cy-open.sh](cy-open.sh) for Docker run command that forwards XVFB events from Cypress to the X11 server running on the host machine. You should see Cypress Test Runner open and work fine.
 
 ![Cypress GUI shown in X11 server](images/cy-open.png)
+
+## Cypress plugins
+
+If your project uses [Cypress plugins](https://on.cypress.io/plugins) and they are declared inside [package.json](./package.json) file, then they should be installed before launching Cypress using Docker. For example this project uses [cypress-axe](https://github.com/component-driven/cypress-axe) plugin.
