@@ -6,5 +6,13 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run: ls -la
-      - run: ./cy-run.sh
+      - run:
+          name: Show files 🖨
+          command: ls -la
+      # in a real system we would cache NPM dependencies folder ~/.npm
+      - run:
+          name: Install dependencies 📦
+          command: npm ci
+      - run:
+          name: Cypress tests 🧪
+          command: ./cy-run.sh

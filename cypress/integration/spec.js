@@ -13,6 +13,9 @@ context('Cypress TodoMVC test', () => {
       .type('learn testing{enter}')
       .type('be cool{enter}')
     cy.get('.todo-list li').should('have.length', 2)
+
+    // make sure cypress-axe is working
+    cy.injectAxe()
   })
 
   // more examples

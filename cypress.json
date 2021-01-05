@@ -1,6 +1,5 @@
 {
   "baseUrl": "http://todomvc.com/examples/vue/",
   "pluginsFile": false,
-  "supportFile": false,
   "fixturesFolder": false
 }
