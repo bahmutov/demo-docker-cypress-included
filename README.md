@@ -1,4 +1,5 @@
-# demo-docker-cypress-included
+# demo-docker-cypress-included [![CircleCI](https://circleci.com/gh/bahmutov/demo-docker-cypress-included/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/demo-docker-cypress-included/tree/master)
+
 > Demo running complete Docker image cypress/included
 
 ## Run tests
