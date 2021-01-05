@@ -11,7 +11,7 @@ echo "Running Cypress e2e tests headlessly without copying files"
 #
 # Docker image "cypress/included:3.2.0" has its entrypoint
 # set to "cypress run" by default
-docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.4.0 $@
+docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.1 $@
 
 # if you need to restrict amount of memory or CPU power the
 # container can use, see
