@@ -45,6 +45,49 @@ Example: shows help
 $ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:3.2.0 help
 ```
 
+## See Cypress info
+
+You can see the information about the Docker image by running [cypress info](https://on.cypress.io/command-line#cypress-info) command
+
+```shell
+$ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:6.2.1 info
+Displaying Cypress info...
+
+Detected 2 browsers installed:
+
+1. Chrome
+  - Name: chrome
+  - Channel: stable
+  - Version: 87.0.4280.66
+  - Executable: google-chrome
+
+2. Firefox
+  - Name: firefox
+  - Channel: stable
+  - Version: 82.0
+  - Executable: firefox
+
+Note: to run these browsers, pass <name>:<channel> to the '--browser' field
+
+Examples:
+- cypress run --browser firefox
+- cypress run --browser chrome
+
+Learn More: https://on.cypress.io/launching-browsers
+
+Proxy Settings: none detected
+Environment Variables:
+CYPRESS_CACHE_FOLDER: /root/.cache/Cypress
+
+Application Data: /root/.config/cypress/cy/development
+Browser Profiles: /root/.config/cypress/cy/development/browsers
+Binary Caches: /root/.cache/Cypress
+
+Cypress Version: 6.2.1
+System Platform: linux (Debian - 10.5)
+System Memory: 2.09 GB free 534 MB
+```
+
 ## Cypress open
 
 Follow [Running GUI applications using Docker for Mac](https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/) and install [XQuartz](https://www.xquartz.org) X11 server. Then see [cy-open.sh](cy-open.sh) for Docker run command that forwards XVFB events from Cypress to the X11 server running on the host machine. You should see Cypress Test Runner open and work fine.
