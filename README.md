@@ -111,4 +111,7 @@ Before running the tests
 
 ```shell
 npm install
+./cy-run.sh
 ```
+
+Note: if any plugins use native extensions, they would need to be installed under exactly the same environment as the Cypress included Docker image that runs them.
