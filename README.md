@@ -106,3 +106,9 @@ Follow [Running GUI applications using Docker for Mac](https://sourabhbajaj.com/
 ## Cypress plugins
 
 If your project uses [Cypress plugins](https://on.cypress.io/plugins) and they are declared inside [package.json](./package.json) file, then they should be installed before launching Cypress using Docker. For example this project uses [cypress-axe](https://github.com/component-driven/cypress-axe) plugin.
+
+Before running the tests
+
+```shell
+npm install
+```
