@@ -3,7 +3,7 @@
 # like XQuartz
 # read https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/
 
-IP=$(ipconfig getifaddr en0)
+IP=$(ifconfig getifaddr en0)
 # this assumes that X11 server allows connections over the network
 # after we execute "/usr/X11/bin/xhost + $IP"
 DISPLAY=$IP:0
