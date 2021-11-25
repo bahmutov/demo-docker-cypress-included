@@ -9,9 +9,9 @@ echo "Running Cypress e2e tests headlessly without copying files"
 #  $@           = pass any arguments to this script to the Cypress command
 #                 like "./cy-run.sh --record"
 #
-# Docker image "cypress/included:3.2.0" has its entrypoint
+# Docker image "cypress/included:7.4.0" has its entrypoint
 # set to "cypress run" by default
-docker run -it -v $PWD:/e2e -w /e2e cypress/included:6.2.1 $@
+docker run -it -v $PWD:/e2e -w /e2e cypress/included:7.4.0 $@
 
 # if you need to restrict amount of memory or CPU power the
 # container can use, see

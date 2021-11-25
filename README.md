@@ -19,8 +19,8 @@ Running Cypress e2e tests headlessly
   (Run Starting)
 
   ┌──────────────────────────────────────────────────────────────────────────┐
-  │ Cypress:    3.2.0                                                        │
-  │ Browser:    Electron 59 (headless)                                       │
+  │ Cypress:    7.4.0                                                        │
+  │ Browser:    Electron 89 (headless)                                       │
   │ Specs:      1 found (spec.js)                                            │
   └──────────────────────────────────────────────────────────────────────────┘
 
@@ -43,7 +43,7 @@ Running Cypress e2e tests headlessly
 Example: shows help
 
 ```shell
-$ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:3.2.0 help
+$ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:7.4.0 help
 ```
 
 ## See Cypress info
@@ -51,7 +51,7 @@ $ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:3.2.
 You can see the information about the Docker image by running [cypress info](https://on.cypress.io/command-line#cypress-info) command
 
 ```shell
-$ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:6.2.1 info
+$ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:7.4.0 info
 Displaying Cypress info...
 
 Detected 2 browsers installed:
@@ -59,13 +59,13 @@ Detected 2 browsers installed:
 1. Chrome
   - Name: chrome
   - Channel: stable
-  - Version: 87.0.4280.66
+  - Version: 90.0.4430.212
   - Executable: google-chrome
 
 2. Firefox
   - Name: firefox
   - Channel: stable
-  - Version: 82.0
+  - Version: 77.0
   - Executable: firefox
 
 Note: to run these browsers, pass <name>:<channel> to the '--browser' field
@@ -84,8 +84,8 @@ Application Data: /root/.config/cypress/cy/development
 Browser Profiles: /root/.config/cypress/cy/development/browsers
 Binary Caches: /root/.cache/Cypress
 
-Cypress Version: 6.2.1
-System Platform: linux (Debian - 10.5)
+Cypress Version: 7.4.0
+System Platform: linux (Debian - 10.9)
 System Memory: 2.09 GB free 534 MB
 ```
 
